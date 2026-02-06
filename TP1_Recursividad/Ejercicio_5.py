@@ -2,7 +2,7 @@
 
 def romano_decimal(num):
     num = num.upper()
-    # Valor de cada letra 
+    # Diccionario con el valor de cada letra
     valores = {
         'I': 1,
         'V': 5,
@@ -37,6 +37,7 @@ def romano_decimal(num):
    
     
 num = input("Escriba un número romano que quiera pasar a decimal: ")
+# Utilizo el try por los posibles errores
 try:
     print(romano_decimal(num))
 except ValueError as e:
