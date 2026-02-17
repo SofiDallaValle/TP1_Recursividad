@@ -38,7 +38,7 @@ class Queue:
             value = self.attention()
             self.arrive(value)
             return value
-        
+
     def show(self):
         for i in range(len(self._elements)):
             print(self.move_to_end())

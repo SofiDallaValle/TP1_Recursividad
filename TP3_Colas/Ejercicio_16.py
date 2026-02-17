@@ -19,7 +19,7 @@ class QueuePriority:
     
     def attention(self):
         if self._elements:
-            highest_priority = max(self._elements, key=lambda x: x[1])[1]
+            highest_priority = min(self._elements, key=lambda x: x[1])[1]
             for i, (value, priority) in enumerate(self._elements):
                 if priority == highest_priority:
                     return self._elements.pop(i)
@@ -30,7 +30,7 @@ class QueuePriority:
 
     def on_front(self):
         if self._elements:
-            highest_priority = max(self._elements, key=lambda x: x[1])[1]
+            highest_priority = min(self._elements, key=lambda x: x[1])[1]
             for value, priority in self._elements:
                 if priority == highest_priority:
                     return value
