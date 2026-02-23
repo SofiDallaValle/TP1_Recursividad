@@ -103,12 +103,12 @@ class QueuePriority:
             print(f"Documento impreso: {doc[0]}")
     
 #Ejemplo de uso 
-if __name__ == "__main__":
-    cola = QueuePriority()
-    cola.cargar_empleados()
-    cola.imprimir_primer_doc()
-    cola.cargar_staff_TI()
-    cola.cargar_gerente()
-    cola.imprimir_dos_primeros()
-    cola.cargar_empleados_gerente()
-    cola.imprimir_documentos()
+
+cola = QueuePriority()
+cola.cargar_empleados()
+cola.imprimir_primer_doc()
+cola.cargar_staff_TI()
+cola.cargar_gerente()
+cola.imprimir_dos_primeros()
+cola.cargar_empleados_gerente()
+cola.imprimir_documentos()
